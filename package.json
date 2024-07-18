@@ -1,0 +1,23 @@
+{
+  "name": "tmp-cli",
+  "version": "1.0.0",
+  "description": "A simple CLI tool",
+  "author": "soags",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bin": {
+    "ts-cli-tool": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "commander": "^12.1.0",
+    "date-fns": "^3.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
