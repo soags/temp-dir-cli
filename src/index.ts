@@ -10,9 +10,11 @@ const DIR = path.join(os.homedir(), "temp");
 const program = new Command();
 
 program
-  .argument("[title]", "Title to add to the directory")
-  .option("-n, --new-directory", "Create the directory with different name, if the directory already exists.")
-  .option("--no-open", "Create the directory without opening it.")
+  .name("temp")
+  .version("1.1.0")
+  .argument("[title]", "title to add to the directory")  
+  .option("-n, --new-directory", "create the directory with different name, if the directory already exists.")
+  .option("--no-open", "create the directory without opening it.")
   .action((title, options) => {
     createDirectoryIfNotExists(DIR);
 
