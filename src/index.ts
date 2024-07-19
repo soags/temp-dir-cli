@@ -13,7 +13,7 @@ const program = new Command()
 
 program
   .name('temp')
-  .version('1.1.4')
+  .version('1.1.5')
   .argument('[title]', 'title to add to the directory')
   .option(
     '-n, --new-directory',
