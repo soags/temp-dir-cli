@@ -1,17 +1,33 @@
 {
-  "name": "tmp-cli",
+  "name": "temp-dir-cli",
   "version": "1.0.0",
-  "description": "A simple CLI tool",
-  "author": "soags",
+  "description": "CLI tool for creating temporary directory and opening explorer.",
+  "keywords": [
+    "cli",
+    "tool",
+    "utility",
+    "qol",
+    "temp",
+    "temporary",
+    "directory",
+    "folder",
+    "mkdir",
+    "mkdirtemp",
+    "explorer",
+    "finder",
+    "open"
+  ],
+  "repository": "github:soags/temp-dir-cli",
   "license": "MIT",
+  "author": "soags",
   "main": "dist/index.js",
   "bin": {
-    "ts-cli-tool": "./dist/index.js"
+    "temp-dir-cli": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@types/node": "^20.14.11",
