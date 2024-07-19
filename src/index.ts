@@ -5,7 +5,7 @@ import { openDirectoryInExplorer } from "./open";
 import { createDirectoryIfNotExists, getFolderPath } from "./directory";
 import { cleanup } from "./cleanup";
 
-const DIR = path.join(os.homedir(), "tmp");
+const DIR = path.join(os.homedir(), "temp");
 
 const program = new Command();
 
