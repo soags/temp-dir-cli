@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import os from "os";
 import path from "path";
 import { Command } from "commander";
@@ -11,7 +13,7 @@ const program = new Command();
 
 program
   .name("temp")
-  .version("1.1.0")
+  .version("1.1.4")
   .argument("[title]", "title to add to the directory")  
   .option("-n, --new-directory", "create the directory with different name, if the directory already exists.")
   .option("--no-open", "create the directory without opening it.")

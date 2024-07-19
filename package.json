@@ -1,6 +1,6 @@
 {
   "name": "temp-dir-cli",
-  "version": "1.1.0",
+  "version": "1.1.4",
   "description": "CLI tool for creating temporary directory and opening explorer.",
   "keywords": [
     "cli",
@@ -28,12 +28,14 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node src/index.ts",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js"    
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "date-fns": "^3.6.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.11",
-    "commander": "^12.1.0",
-    "date-fns": "^3.6.0",
+    "@types/node": "^20.14.11",    
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
   }
