@@ -22,7 +22,8 @@
   "author": "soags",
   "main": "dist/index.js",
   "bin": {
-    "temp-dir-cli": "./dist/index.js"
+    "temp-dir-cli": "./dist/index.js",
+    "temp": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
