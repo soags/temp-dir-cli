@@ -30,11 +30,11 @@ temp-dir-cli [title] [options...]
 
 ### Options
 
-|Argument|Description|
-|--|--|
-|`title`|Title to add to the directory. |
-|`-n` or `--new-directory` | Create the directory with different name, if the directory already exists.|
-|`--no-open`|Create the directory without opening it.|
+| Argument                  | Description                                                                |
+| ------------------------- | -------------------------------------------------------------------------- |
+| `title`                   | Title to add to the directory.                                             |
+| `-n` or `--new-directory` | Create the directory with different name, if the directory already exists. |
+| `--no-open`               | Create the directory without opening it.                                   |
 
 ### Example
 
