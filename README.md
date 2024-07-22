@@ -19,13 +19,7 @@ npm install -g temp-dir-cli
 You can use the tool with either of the following commands:
 
 ```powershell
-temp [title] [options...]
-```
-
-Or
-
-```powershell
-temp-dir-cli [title] [options...]
+tempdir [title] [options...]
 ```
 
 ### Options
@@ -35,30 +29,30 @@ temp-dir-cli [title] [options...]
 | `title`                   | Title to add to the directory.                                             |
 | `-n` or `--new-directory` | Create the directory with different name, if the directory already exists. |
 | `-q, --quiet`             | Create the directory without opening it.                                   |
-| `--root`                  | Only open the root directory of the temporary directory.                   |
+| `--root`                  | Open the `temp` directory.                                                 |
 
 ### Example
 
 #### Create a temporary directory
 
-```
-temp
+```powershell
+tempdir
 ```
 
 This command will create a directory named with the current date, e.g., `2024-07-19`.
 
 #### Create temporary directory with specified title
 
-```
-temp Foo
+```powershell
+tempdir Foo
 ```
 
 This command will create a directory named `2024-07-19_Foo`.
 
 #### Create temporary directory with different name, if the directory already exists.
 
-```
-temp -n
+```powershell
+tempdir -n
 ```
 
 If a directory named `2024-07-19` already exists, this command will create a directory named `2024-07-19_1`.
