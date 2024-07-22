@@ -21,10 +21,16 @@ program
     'create the directory with different name, if the directory already exists.',
   )
   .option('-q, --quiet', 'do not open the directory.')
+  .option('--root', 'only open the root directory of the temporary directory.')
   .action((title, options) => {
     createDirectoryIfNotExists(DIR)
 
     cleanup(DIR)
+
+    if (options.root) {
+      openDirectoryInExplorer(DIR)
+      return
+    }
 
     const directoryPath = getFolderPath(DIR, title, options.newDirectory)
 
