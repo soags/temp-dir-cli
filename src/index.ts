@@ -20,7 +20,7 @@ program
     '-n, --new-directory',
     'create the directory with different name, if the directory already exists.',
   )
-  .option('--no-open', 'create the directory without opening it.')
+  .option('-q, --quiet', 'do not open the directory.')
   .action((title, options) => {
     createDirectoryIfNotExists(DIR)
 
@@ -30,7 +30,7 @@ program
 
     createDirectoryIfNotExists(directoryPath)
 
-    if (options.open) {
+    if (!options.quiet) {
       openDirectoryInExplorer(directoryPath)
     }
   })
