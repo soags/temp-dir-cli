@@ -8,7 +8,7 @@ import { createDirectoryIfNotExists, getFolderPath } from './directory'
 import { cleanup } from './cleanup'
 import { version } from '../package.json'
 
-const DIR = path.join(os.homedir(), 'temp')
+const DIR = path.join(os.homedir(), '.temp')
 
 const program = new Command()
 
