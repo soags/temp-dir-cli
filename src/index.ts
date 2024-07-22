@@ -6,6 +6,7 @@ import { Command } from 'commander'
 import { openDirectoryInExplorer } from './open'
 import { createDirectoryIfNotExists, getFolderPath } from './directory'
 import { cleanup } from './cleanup'
+import { version } from '../package.json'
 
 const DIR = path.join(os.homedir(), 'temp')
 
@@ -13,7 +14,7 @@ const program = new Command()
 
 program
   .name('temp')
-  .version('1.1.5')
+  .version(version)
   .argument('[title]', 'title to add to the directory')
   .option(
     '-n, --new-directory',
